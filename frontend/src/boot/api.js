@@ -70,6 +70,13 @@ const changePassword = async password => {
   return data
 }
 
+const getEvents = async (isLive = true) => {
+  const url = state.server + `/events?isLive=${isLive}`
+  const config = getAuthHeaders()
+  const { data } = await axios.get(url, config)
+  return data
+}
+
 export const api = {
   login,
   register,
@@ -78,7 +85,8 @@ export const api = {
   fetchIP,
   connectWithProvider,
   updateUser,
-  changePassword
+  changePassword,
+  getEvents
 }
 
 Vue.prototype.$api = api
