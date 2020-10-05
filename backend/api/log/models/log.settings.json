@@ -1,5 +1,6 @@
 {
   "kind": "collectionType",
+  "connection": "logs",
   "collectionName": "logs",
   "info": {
     "name": "log"
