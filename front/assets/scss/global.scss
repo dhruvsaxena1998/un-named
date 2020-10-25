@@ -1,0 +1,14 @@
+@import './config';
+@import './colors';
+
+html {
+  font-size: $base_font;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: $m-size;
+  background-color: $dark;
+  color: $white;
+  transition: $anim_duration;
+}
