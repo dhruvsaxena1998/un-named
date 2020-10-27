@@ -1,9 +1,21 @@
 <template>
-  <div class="container">UNNAMED</div>
+  <div class="container">
+    UNNAMED
+
+    <vs-button :active="active" @click="active = !active" style="outline: none">
+      Active
+    </vs-button>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      active: false,
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
